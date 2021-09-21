@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet"> 
+    <script src="scripts/main.js"/></script>
+    <script>const canvas = document.querySelector('.myCanvas');
+        const width = canvas.width = window.innerWidth;
+        const height = canvas.height = window.innerHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'rgb(40, 40, 30)';
+        ctx.fillRect(0, 0, width, height);
+        ctx.fillStyle = 'rgb(255, 0, 0)';
+        ctx.fillRect(50, 50, 100, 150);
+        ctx.fillStyle = 'rgb(0, 255, 0)';
+ctx.fillRect(75, 75, 100, 100);</script>
+    <title>Don't Get Crushed!</title>
+</head>
+<body>
+    <canvas class="myCanvas">
+        <p>Please Update Your Browser</p>
+      </canvas>
+</body>
+</html>

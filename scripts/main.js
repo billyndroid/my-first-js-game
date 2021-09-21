@@ -11,12 +11,41 @@ ctx.fillStyle = 'rgba(243, 6, 89, 0.75)';
 ctx.fillRect(25, 100, 175, 50);
 ctx.fillStyle = 'rgba(255, 0, 255, 0.75)';
 ctx.fillRect(250, 100, 175, 50);
-//road render
+//road descriptionm
 ctx.fillStyle = 'rgba(47,79,79, 0.75)';
 ctx.fillRect(0, 200, width, 200);
 ctx.fillStyle = 'rgba(255, 255, 255)';
 ctx.fillRect(20, 220, 50, 5);
 //end road render
+//frog description
+// First path
+ctx.beginPath();
+ctx.strokeStyle = 'blue';
+ctx.moveTo(20, 20);
+ctx.lineTo(200, 20);
+ctx.stroke();
+
+// Second path
+ctx.beginPath();
+ctx.strokeStyle = 'green';
+ctx.moveTo(20, 20);
+ctx.lineTo(120, 120);
+ctx.stroke();
+//converts degrees to radians
+function degToRad(degrees) {
+    return degrees * Math.PI / 180;
+  };
+//triangle
+ctx.lineTo(150, 50);
+let triHeight = 50 * Math.tan(degToRad(60));
+ctx.lineTo(100, 50+triHeight);
+ctx.lineTo(50, 50);
+ctx.fill();
+//circle
+ctx.fillStyle = 'rgb(0, 0, 255)';
+ctx.beginPath();
+ctx.arc(150, 106, 50, degToRad(0), degToRad(360), false);
+ctx.fill();
 //ctx.strokeStyle = 'rgb(255, 255, 255)';
 //ctx.lineWidth = 5;
 //ctx.strokeRect(25, 25, 175, 200);

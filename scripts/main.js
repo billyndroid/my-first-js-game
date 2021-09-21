@@ -46,6 +46,32 @@ ctx.fillStyle = 'rgb(0, 0, 255)';
 ctx.beginPath();
 ctx.arc(150, 106, 50, degToRad(0), degToRad(360), false);
 ctx.fill();
+//arc
+ctx.fillStyle = 'yellow';
+ctx.beginPath();
+ctx.arc(200, 106, 50, degToRad(-45), degToRad(45), true);
+ctx.lineTo(200, 106);
+ctx.fill();
+//stroke text
+ctx.strokeStyle = 'white';
+ctx.lineWidth = 2;
+ctx.textAlign = 'left';
+ctx.font = '72px helvetica';
+ctx.strokeText('Start', 550, 380);
+// fill text
+ctx.fillStyle = 'red';
+ctx.textAlign = 'center';
+ctx.font = '48px georgia';
+ctx.fillText('Nutty Squirrel', 350, 150);
+ctx.fillText('center', 500, 40);
+//drawing images
+let image = new Image();
+image.src = "assets/FAVicon.png";
+image.onload = function() {
+    ctx.drawImage(image, 150, 150);
+    ctx.drawImage(image, 20, 20, 185, 175, 50, 50, 185, 175);
+  }
+  
 //ctx.strokeStyle = 'rgb(255, 255, 255)';
 //ctx.lineWidth = 5;
 //ctx.strokeRect(25, 25, 175, 200);

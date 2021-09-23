@@ -1,0 +1,1 @@
+let btnOne = new GamepadButton
